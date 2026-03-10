@@ -1,62 +1,1745 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tevin's Notary Agency</title>
-</head>
+<!-- saved from url=(0205)https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html -->
+<html lang="en" class="h-full"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tevin's Notary Agency</title>
+  <script src="./3.4.17"></script>
+  <script src="./element_sdk.js.download"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./css2" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a1628',
+            'navy-light': '#142240',
+            gold: '#c9a227',
+            'gold-light': '#d4b84a',
+            'gold-dark': '#a8871f'
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .app-wrapper { min-height: 100%; width: 100%; }
+    .nav-link { position: relative; }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #c9a227;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after { width: 100%; }
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    .gold-btn {
+      background: linear-gradient(135deg, #c9a227 0%, #d4b84a 100%);
+      transition: all 0.3s ease;
+    }
+    .gold-btn:hover {
+      background: linear-gradient(135deg, #a8871f 0%, #c9a227 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(201, 162, 39, 0.4);
+    }
+    .fade-in {
+      animation: fadeIn 0.6s ease forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .step-card {
+      transition: all 0.3s ease;
+    }
+    .step-card:hover {
+      background: #f8fafc;
+    }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="./data_sdk.js.download" type="text/javascript"></script>
+ <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.left-0{left:0px}.right-0{right:0px}.top-0{top:0px}.bottom-0{bottom:0px}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-12{margin-top:3rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:0.25rem}.mt-2{margin-top:0.5rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-10{height:2.5rem}.h-12{height:3rem}.h-20{height:5rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-16{height:4rem}.h-8{height:2rem}.h-96{height:24rem}.w-10{width:2.5rem}.w-12{width:3rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-7{width:1.75rem}.w-16{width:4rem}.w-8{width:2rem}.w-96{width:24rem}.w-full{width:100%}.max-w-7xl{max-width:80rem}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.flex-shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-1\/2{--tw-translate-x:50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-1\/2{--tw-translate-y:50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-auto{overflow:auto}.overflow-hidden{overflow:hidden}.rounded-lg{border-radius:0.5rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-navy-light{--tw-border-opacity:1;border-color:rgb(20 34 64 / var(--tw-border-opacity, 1))}.border-gold\/30{border-color:rgb(201 162 39 / 0.3)}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-white\/30{border-color:rgb(255 255 255 / 0.3)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-navy{--tw-bg-opacity:1;background-color:rgb(10 22 40 / var(--tw-bg-opacity, 1))}.bg-navy\/95{background-color:rgb(10 22 40 / 0.95)}.bg-gold{--tw-bg-opacity:1;background-color:rgb(201 162 39 / var(--tw-bg-opacity, 1))}.bg-gold\/10{background-color:rgb(201 162 39 / 0.1)}.bg-gold\/20{background-color:rgb(201 162 39 / 0.2)}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-navy-light\/50{background-color:rgb(20 34 64 / 0.5)}.bg-transparent{background-color:transparent}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-gold{--tw-gradient-from:#c9a227 var(--tw-gradient-from-position);--tw-gradient-to:rgb(201 162 39 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-gold-light{--tw-gradient-to:#d4b84a var(--tw-gradient-to-position)}.p-2{padding:0.5rem}.p-10{padding:2.5rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.px-8{padding-left:2rem;padding-right:2rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-6{padding-bottom:1.5rem}.pt-20{padding-top:5rem}.pt-4{padding-top:1rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-body{font-family:Inter, system-ui, sans-serif}.font-display{font-family:Playfair Display, Georgia, serif}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-bold{font-weight:700}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wider{letter-spacing:0.05em}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-gold{--tw-text-opacity:1;color:rgb(201 162 39 / var(--tw-text-opacity, 1))}.text-navy{--tw-text-opacity:1;color:rgb(10 22 40 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/50{color:rgb(255 255 255 / 0.5)}.text-white\/70{color:rgb(255 255 255 / 0.7)}.text-white\/90{color:rgb(255 255 255 / 0.9)}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.opacity-10{opacity:0.1}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.1)}.hover\:text-gold:hover{--tw-text-opacity:1;color:rgb(201 162 39 / var(--tw-text-opacity, 1))}.hover\:text-gold-light:hover{--tw-text-opacity:1;color:rgb(212 184 74 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:block{display:block}.sm\:flex-row{flex-direction:row}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:space-y-0 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0px * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0px * var(--tw-space-y-reverse))}.md\:py-32{padding-top:8rem;padding-bottom:8rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
+ <body class="h-full font-body text-gray-800 bg-white">
+  <div class="app-wrapper overflow-auto"><!-- Navigation -->
+   <nav id="main-nav" class="fixed top-0 left-0 right-0 bg-navy/95 backdrop-blur-md z-50 border-b border-navy-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="flex items-center justify-between h-20"><!-- Logo --> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;home&#39;)" class="flex items-center space-x-3 cursor-pointer">
+       <div class="w-12 h-12 bg-gradient-to-br from-gold to-gold-light rounded-lg flex items-center justify-center">
+        <svg class="w-7 h-7 text-navy" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z"></path> <path d="M8 12h8v2H8zm0 4h8v2H8z"></path>
+        </svg>
+       </div>
+       <div class="hidden sm:block"><span id="nav-business-name" class="text-white font-display text-xl font-semibold">Tevin's Notary Agency</span>
+        <p class="text-gold text-xs tracking-wider">PROFESSIONAL NOTARY SERVICES</p>
+       </div></a> <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center space-x-6"><a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;home&#39;)" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Home</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;ron&#39;)" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Remote Online Notary</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;mobile-notary&#39;)" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Mobile Notary</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;loan-signing&#39;)" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Loan Signing</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;service-areas&#39;)" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Service Areas</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;pricing&#39;)" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Pricing</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;about&#39;)" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">About</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;contact&#39;)" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Contact</a>
+      </div><!-- Phone & Mobile Menu -->
+      <div class="flex items-center space-x-4"><a id="nav-phone" href="tel:9543764114" class="hidden md:flex items-center space-x-2 text-gold hover:text-gold-light transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+        </svg><span class="font-semibold">(954) 376-4114</span> </a> <button onclick="toggleMobileMenu()" class="lg:hidden text-white p-2">
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg></button>
+      </div>
+     </div><!-- Mobile Menu -->
+     <div id="mobile-menu" class="lg:hidden hidden pb-6">
+      <div class="flex flex-col space-y-3 pt-4 border-t border-navy-light"><a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;home&#39;); toggleMobileMenu();" class="text-white/90 hover:text-gold py-2 transition-colors">Home</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;ron&#39;); toggleMobileMenu();" class="text-white/90 hover:text-gold py-2 transition-colors">Remote Online Notary</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;mobile-notary&#39;); toggleMobileMenu();" class="text-white/90 hover:text-gold py-2 transition-colors">Mobile Notary</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;loan-signing&#39;); toggleMobileMenu();" class="text-white/90 hover:text-gold py-2 transition-colors">Loan Signing</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;service-areas&#39;); toggleMobileMenu();" class="text-white/90 hover:text-gold py-2 transition-colors">Service Areas</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;pricing&#39;); toggleMobileMenu();" class="text-white/90 hover:text-gold py-2 transition-colors">Pricing</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;about&#39;); toggleMobileMenu();" class="text-white/90 hover:text-gold py-2 transition-colors">About</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;contact&#39;); toggleMobileMenu();" class="text-white/90 hover:text-gold py-2 transition-colors">Contact</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;terms&#39;); toggleMobileMenu();" class="text-white/90 hover:text-gold py-2 transition-colors">Terms &amp; Conditions</a> <a href="tel:9543764114" class="flex items-center space-x-2 text-gold py-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+        </svg><span class="font-semibold">(954) 376-4114</span> </a>
+      </div>
+     </div>
+    </div>
+   </nav><!-- Page Content Container -->
+   <main id="page-content" class="pt-20">
+        <!-- Hero Section -->
+        <section class="bg-navy relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-gold rounded-full filter blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-gold rounded-full filter blur-3xl translate-x-1/2 translate-y-1/2"></div>
+          </div>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
+            <div class="text-center fade-in">
+              <!-- Trust Badge -->
+              <div class="inline-flex items-center space-x-2 bg-navy-light/50 border border-gold/30 rounded-full px-6 py-2 mb-8">
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-white/90 text-sm font-medium">Florida Commissioned • Licensed &amp; Insured • Secure &amp; Confidential</span>
+              </div>
+              
+              <!-- Headline -->
+              <h1 id="hero-headline" class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">Mobile Notary Services in South Florida</h1>
+              <h2 class="font-display text-2xl md:text-3xl text-gold mb-6">
+                Secure Remote Online Notary Nationwide
+              </h2>
+              
+              <!-- Subheadline -->
+              <p class="text-white/70 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+                Serving Broward County, Palm Beach County, St. Lucie County and Providing Remote Online Notarization Across the United States
+              </p>
+              
+              <!-- CTA Buttons -->
+              <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+                <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&amp;appointmentType=88131003" target="_blank" rel="noopener noreferrer" class="gold-btn text-navy font-bold px-8 py-4 rounded-lg text-lg inline-flex items-center space-x-2">
+                  <span>Book Remote Online Notary</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </a>
+                <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&amp;appointmentType=88133763" target="_blank" rel="noopener noreferrer" class="bg-transparent border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-lg text-lg hover:bg-white/10 transition-all inline-flex items-center space-x-2">
+                  <span>Schedule Mobile Notary</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </a>
+              </div>
+              
+              <!-- Phone -->
+              <div class="flex items-center justify-center space-x-3">
+                <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                </div>
+                <a id="hero-phone" href="tel:9543764114" class="text-2xl md:text-3xl font-bold text-gold hover:text-gold-light transition-colors">(954) 376-4114</a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-<body>
+        <!-- Services Section -->
+        <section class="py-20 bg-gray-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <span class="text-gold font-semibold text-sm tracking-wider uppercase">Our Services</span>
+              <h2 class="font-display text-3xl md:text-4xl font-bold text-navy mt-2 mb-4">Professional Notary Services</h2>
+              <p class="text-gray-600 max-w-2xl mx-auto">From remote online notarization to mobile services across South Florida, we provide comprehensive notary solutions tailored to your needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <!-- RON Card -->
+              <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;ron&#39;)" class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 cursor-pointer block">
+                <div class="w-16 h-16 bg-navy rounded-xl flex items-center justify-center mb-6">
+                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold text-navy mb-3">Remote Online Notary</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Secure online notarization legally recognized across the United States.</p>
+                <span class="text-gold font-semibold text-sm inline-flex items-center">
+                  Learn More
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </span>
+              </a>
+              
+              <!-- Mobile Notary Card -->
+              <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;mobile-notary&#39;)" class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 cursor-pointer block">
+                <div class="w-16 h-16 bg-navy rounded-xl flex items-center justify-center mb-6">
+                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                  </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold text-navy mb-3">Mobile Notary Services</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">We travel to your home, office, or preferred location in South Florida.</p>
+                <span class="text-gold font-semibold text-sm inline-flex items-center">
+                  Learn More
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </span>
+              </a>
+              
+              <!-- Loan Signing Card -->
+              <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;loan-signing&#39;)" class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 cursor-pointer block">
+                <div class="w-16 h-16 bg-navy rounded-xl flex items-center justify-center mb-6">
+                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold text-navy mb-3">Loan Signing Agent</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Professional loan document signings for buyers, sellers, and refinances.</p>
+                <span class="text-gold font-semibold text-sm inline-flex items-center">
+                  Learn More
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </span>
+              </a>
+              
+              <!-- Real Estate Card -->
+              <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;loan-signing&#39;)" class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 cursor-pointer block">
+                <div class="w-16 h-16 bg-navy rounded-xl flex items-center justify-center mb-6">
+                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                  </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold text-navy mb-3">Real Estate &amp; Title Closings</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Professional signing services for real estate transactions.</p>
+                <span class="text-gold font-semibold text-sm inline-flex items-center">
+                  Learn More
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
 
-<nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#ron">Remote Online Notary</a></li>
-<li><a href="#mobile">Mobile Notary</a></li>
-<li><a href="#loan">Loan Signing</a></li>
-<li><a href="#services">Service Areas</a></li>
-<li><a href="#pricing">Pricing</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+        <!-- Why Choose Us -->
+        <section class="py-20 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <span class="text-gold font-semibold text-sm tracking-wider uppercase">Why Choose Us</span>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-navy mt-2 mb-6">Trusted Professional Notary Services</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">With years of experience serving South Florida and clients nationwide through remote online notarization, we provide reliable, professional, and convenient notary services you can trust.</p>
+                
+                <div class="space-y-6">
+                  <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy mb-1">Licensed &amp; Insured</h4>
+                      <p class="text-gray-600 text-sm">Florida commissioned notary public with full professional insurance coverage.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy mb-1">Flexible Scheduling</h4>
+                      <p class="text-gray-600 text-sm">Available evenings and weekends to accommodate your schedule.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy mb-1">We Come to You</h4>
+                      <p class="text-gray-600 text-sm">Mobile services throughout Broward, Palm Beach, and St. Lucie Counties.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-navy rounded-3xl p-10 text-white">
+                <h3 class="font-display text-2xl font-bold mb-6">Ready to Get Started?</h3>
+                <p class="text-white/70 mb-8">Book your appointment today and experience professional notary services at your convenience.</p>
+                
+                <div class="space-y-4">
+                  <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&amp;appointmentType=88131003" target="_blank" rel="noopener noreferrer" class="gold-btn text-navy font-semibold px-6 py-4 rounded-lg flex items-center justify-center space-x-2 w-full">
+                    <span>Book Remote Online Notary</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </a>
+                  <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&amp;appointmentType=88133763" target="_blank" rel="noopener noreferrer" class="bg-transparent border-2 border-white/30 text-white font-semibold px-6 py-4 rounded-lg flex items-center justify-center space-x-2 w-full hover:bg-white/10 transition-all">
+                    <span>Schedule Mobile Notary</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </a>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-white/20">
+                  <p class="text-white/50 text-sm mb-2">Questions? Call us directly:</p>
+                  <a href="tel:9543764114" class="text-gold text-2xl font-bold hover:text-gold-light transition-colors">(954) 376-4114</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main><!-- Footer -->
+   <footer class="bg-navy text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"><!-- Company Info -->
+      <div>
+       <div class="flex items-center space-x-3 mb-6">
+        <div class="w-10 h-10 bg-gradient-to-br from-gold to-gold-light rounded-lg flex items-center justify-center">
+         <svg class="w-6 h-6 text-navy" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z"></path>
+         </svg>
+        </div><span id="footer-business-name" class="font-display text-lg font-semibold">Tevin's Notary Agency</span>
+       </div>
+       <p class="text-white/70 text-sm leading-relaxed mb-4">Professional mobile notary and remote online notarization services. Florida commissioned, serving clients across the United States.</p>
+       <div class="flex items-center space-x-2 text-gold">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+        </svg><span class="text-sm font-medium">Licensed &amp; Insured</span>
+       </div>
+      </div><!-- Quick Links -->
+      <div>
+       <h4 class="font-display text-lg font-semibold mb-6 text-gold">Quick Links</h4>
+       <ul class="space-y-3">
+        <li><a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;ron&#39;)" class="text-white/70 hover:text-gold transition-colors text-sm">Remote Online Notary</a></li>
+        <li><a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;mobile-notary&#39;)" class="text-white/70 hover:text-gold transition-colors text-sm">Mobile Notary</a></li>
+        <li><a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;loan-signing&#39;)" class="text-white/70 hover:text-gold transition-colors text-sm">Loan Signing Agent</a></li>
+        <li><a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;service-areas&#39;)" class="text-white/70 hover:text-gold transition-colors text-sm">Service Areas</a></li>
+        <li><a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;pricing&#39;)" class="text-white/70 hover:text-gold transition-colors text-sm">Pricing</a></li>
+       </ul>
+      </div><!-- Service Areas -->
+      <div>
+       <h4 class="font-display text-lg font-semibold mb-6 text-gold">Service Areas</h4>
+       <ul class="space-y-3">
+        <li class="text-white/70 text-sm flex items-center space-x-2">
+         <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+         </svg><span>Broward County, FL</span></li>
+        <li class="text-white/70 text-sm flex items-center space-x-2">
+         <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+         </svg><span>Palm Beach County, FL</span></li>
+        <li class="text-white/70 text-sm flex items-center space-x-2">
+         <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+         </svg><span>St. Lucie County, FL</span></li>
+        <li class="text-white/70 text-sm flex items-center space-x-2 mt-4">
+         <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"></path>
+         </svg><span>RON Nationwide</span></li>
+       </ul>
+      </div><!-- Contact -->
+      <div>
+       <h4 class="font-display text-lg font-semibold mb-6 text-gold">Contact Us</h4>
+       <ul class="space-y-4">
+        <li><a id="footer-phone" href="tel:9543764114" class="flex items-center space-x-3 text-white/70 hover:text-gold transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg><span class="text-sm">(954) 376-4114</span> </a></li>
+        <li><a href="mailto:tevinsnotaryagency@gmail.com" class="flex items-center space-x-3 text-white/70 hover:text-gold transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg><span class="text-sm">tevinsnotaryagency@gmail.com</span> </a></li>
+       </ul>
+       <div class="mt-6"><a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&amp;appointmentType=88131003" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 gold-btn text-navy font-semibold px-6 py-3 rounded-lg text-sm"> <span>Book Appointment</span>
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+         </svg></a>
+       </div>
+      </div>
+     </div><!-- Bottom Bar -->
+     <div class="border-t border-navy-light mt-12 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+       <p class="text-white/50 text-sm">© 2024 Tevin's Notary Agency. All rights reserved.</p>
+       <div class="flex items-center space-x-6"><a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;terms&#39;)" class="text-white/50 hover:text-gold text-sm transition-colors">Terms &amp; Conditions</a> <a href="https://c2c80yjqszyw71f2.canvacode.com/codelet/eyJhbGciOiJIUzI1NiJ9.eyJjIjoiYzJjODB5anFzenl3NzFmMiIsImV4cCI6MTc3MzIzODk1MiwiZGVwIjoiREFIQ0t4RTRtQWMifQ.ITULCGJVUNKnoFYKPBC4Hb3aR-mPkXBFM4EBt8mVp7M/index.html#" onclick="navigateTo(&#39;contact&#39;)" class="text-white/50 hover:text-gold text-sm transition-colors">Privacy Policy</a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+    // Default configuration
+    const defaultConfig = {
+      business_name: "Tevin's Notary Agency",
+      phone_number: "(954) 376-4114",
+      hero_headline: "Mobile Notary Services in South Florida",
+      primary_color: "#0a1628",
+      secondary_color: "#c9a227",
+      text_color: "#1f2937",
+      background_color: "#ffffff",
+      accent_color: "#142240"
+    };
 
-<header id="home">
-<a href="#home"><img src="logo.png" alt="Tevin's Notary Agency Logo"></a>
-</header>
+    let currentPage = 'home';
 
-<section id="services">
-<h1>Welcome to Tevin's Notary Agency</h1>
+    // Page Templates
+    const pages = {
+      home: () => 
+        <!-- Hero Section -->
+        <section class="bg-navy relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-gold rounded-full filter blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-gold rounded-full filter blur-3xl translate-x-1/2 translate-y-1/2"></div>
+          </div>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
+            <div class="text-center fade-in">
+              <!-- Trust Badge -->
+              <div class="inline-flex items-center space-x-2 bg-navy-light/50 border border-gold/30 rounded-full px-6 py-2 mb-8">
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-white/90 text-sm font-medium">Florida Commissioned • Licensed & Insured • Secure & Confidential</span>
+              </div>
+              
+              <!-- Headline -->
+              <h1 id="hero-headline" class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+                Mobile Notary Services in South Florida
+              </h1>
+              <h2 class="font-display text-2xl md:text-3xl text-gold mb-6">
+                Secure Remote Online Notary Nationwide
+              </h2>
+              
+              <!-- Subheadline -->
+              <p class="text-white/70 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+                Serving Broward County, Palm Beach County, St. Lucie County and Providing Remote Online Notarization Across the United States
+              </p>
+              
+              <!-- CTA Buttons -->
+              <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+                <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88131003" target="_blank" rel="noopener noreferrer" class="gold-btn text-navy font-bold px-8 py-4 rounded-lg text-lg inline-flex items-center space-x-2">
+                  <span>Book Remote Online Notary</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </a>
+                <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88133763" target="_blank" rel="noopener noreferrer" class="bg-transparent border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-lg text-lg hover:bg-white/10 transition-all inline-flex items-center space-x-2">
+                  <span>Schedule Mobile Notary</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                  </svg>
+                </a>
+              </div>
+              
+              <!-- Phone -->
+              <div class="flex items-center justify-center space-x-3">
+                <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  </svg>
+                </div>
+                <a id="hero-phone" href="tel:9543764114" class="text-2xl md:text-3xl font-bold text-gold hover:text-gold-light transition-colors">(954) 376-4114</a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-<h2>Our Services</h2>
+        <!-- Services Section -->
+        <section class="py-20 bg-gray-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <span class="text-gold font-semibold text-sm tracking-wider uppercase">Our Services</span>
+              <h2 class="font-display text-3xl md:text-4xl font-bold text-navy mt-2 mb-4">Professional Notary Services</h2>
+              <p class="text-gray-600 max-w-2xl mx-auto">From remote online notarization to mobile services across South Florida, we provide comprehensive notary solutions tailored to your needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <!-- RON Card -->
+              <a href="#" onclick="navigateTo('ron')" class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 cursor-pointer block">
+                <div class="w-16 h-16 bg-navy rounded-xl flex items-center justify-center mb-6">
+                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold text-navy mb-3">Remote Online Notary</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Secure online notarization legally recognized across the United States.</p>
+                <span class="text-gold font-semibold text-sm inline-flex items-center">
+                  Learn More
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </a>
+              
+              <!-- Mobile Notary Card -->
+              <a href="#" onclick="navigateTo('mobile-notary')" class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 cursor-pointer block">
+                <div class="w-16 h-16 bg-navy rounded-xl flex items-center justify-center mb-6">
+                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                  </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold text-navy mb-3">Mobile Notary Services</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">We travel to your home, office, or preferred location in South Florida.</p>
+                <span class="text-gold font-semibold text-sm inline-flex items-center">
+                  Learn More
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </a>
+              
+              <!-- Loan Signing Card -->
+              <a href="#" onclick="navigateTo('loan-signing')" class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 cursor-pointer block">
+                <div class="w-16 h-16 bg-navy rounded-xl flex items-center justify-center mb-6">
+                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                  </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold text-navy mb-3">Loan Signing Agent</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Professional loan document signings for buyers, sellers, and refinances.</p>
+                <span class="text-gold font-semibold text-sm inline-flex items-center">
+                  Learn More
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </a>
+              
+              <!-- Real Estate Card -->
+              <a href="#" onclick="navigateTo('loan-signing')" class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 cursor-pointer block">
+                <div class="w-16 h-16 bg-navy rounded-xl flex items-center justify-center mb-6">
+                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                  </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold text-navy mb-3">Real Estate & Title Closings</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Professional signing services for real estate transactions.</p>
+                <span class="text-gold font-semibold text-sm inline-flex items-center">
+                  Learn More
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
 
-<div id="ron">
-<h3>Remote Online Notary</h3>
-<p>Secure online notarization available nationwide where legally permitted.</p>
-</div>
+        <!-- Why Choose Us -->
+        <section class="py-20 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <span class="text-gold font-semibold text-sm tracking-wider uppercase">Why Choose Us</span>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-navy mt-2 mb-6">Trusted Professional Notary Services</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">With years of experience serving South Florida and clients nationwide through remote online notarization, we provide reliable, professional, and convenient notary services you can trust.</p>
+                
+                <div class="space-y-6">
+                  <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy mb-1">Licensed & Insured</h4>
+                      <p class="text-gray-600 text-sm">Florida commissioned notary public with full professional insurance coverage.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy mb-1">Flexible Scheduling</h4>
+                      <p class="text-gray-600 text-sm">Available evenings and weekends to accommodate your schedule.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy mb-1">We Come to You</h4>
+                      <p class="text-gray-600 text-sm">Mobile services throughout Broward, Palm Beach, and St. Lucie Counties.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-navy rounded-3xl p-10 text-white">
+                <h3 class="font-display text-2xl font-bold mb-6">Ready to Get Started?</h3>
+                <p class="text-white/70 mb-8">Book your appointment today and experience professional notary services at your convenience.</p>
+                
+                <div class="space-y-4">
+                  <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88131003" target="_blank" rel="noopener noreferrer" class="gold-btn text-navy font-semibold px-6 py-4 rounded-lg flex items-center justify-center space-x-2 w-full">
+                    <span>Book Remote Online Notary</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                  </a>
+                  <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88133763" target="_blank" rel="noopener noreferrer" class="bg-transparent border-2 border-white/30 text-white font-semibold px-6 py-4 rounded-lg flex items-center justify-center space-x-2 w-full hover:bg-white/10 transition-all">
+                    <span>Schedule Mobile Notary</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                  </a>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-white/20">
+                  <p class="text-white/50 text-sm mb-2">Questions? Call us directly:</p>
+                  <a href="tel:9543764114" class="text-gold text-2xl font-bold hover:text-gold-light transition-colors">(954) 376-4114</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ,
 
-<div id="mobile">
-<h3>Mobile Notary</h3>
-<p>Serving Broward, Palm Beach and St. Lucie counties.</p>
-</div>
+      ron: () => 
+        <!-- RON Hero -->
+        <section class="bg-navy relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full filter blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+          </div>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative">
+            <div class="max-w-3xl fade-in">
+              <a href="#" onclick="navigateTo('home')" class="inline-flex items-center text-gold hover:text-gold-light mb-6 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+              </a>
+              <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Remote Online Notary Services Across the United States</h1>
+              <p class="text-white/70 text-lg mb-4">Florida commissioned online notary serving clients nationwide where legally permitted. Complete your notarization from anywhere with a secure video connection.</p>
+              <div class="inline-flex items-center space-x-2 bg-gold/20 rounded-full px-4 py-2">
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-white text-sm font-medium">Legally Recognized in All 50 States</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
-<div id="loan">
-<h3>Loan Signing</h3>
-<p>Professional signing services for buyers, sellers and refinances.</p>
-</div>
+        <!-- RON Content -->
+        <section class="py-16 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+              <!-- Main Content -->
+              <div class="lg:col-span-2">
+                <!-- Pricing Card -->
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 mb-12 text-white">
+                  <h2 class="font-display text-2xl font-bold mb-4">RON Pricing</h2>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <div class="bg-white/10 rounded-xl p-6 text-center">
+                      <p class="text-white/70 text-sm mb-2">Standard Rate</p>
+                      <p class="text-3xl font-bold text-gold">$45</p>
+                      <p class="text-white/60 text-xs mt-1">Starting price</p>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-6 text-center">
+                      <p class="text-white/70 text-sm mb-2">Witness Fee</p>
+                      <p class="text-3xl font-bold text-gold">$15</p>
+                      <p class="text-white/60 text-xs mt-1">Per witness</p>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-6 text-center">
+                      <p class="text-white/70 text-sm mb-2">Additional Docs</p>
+                      <p class="text-3xl font-bold text-gold">Varies</p>
+                      <p class="text-white/60 text-xs mt-1">Contact for quote</p>
+                    </div>
+                  </div>
+                </div>
 
-<div id="pricing">
-<h3>Pricing</h3>
-<p>RON starting at $45. Mobile Notary starting at $100.</p>
-</div>
+                <!-- How It Works -->
+                <h2 class="font-display text-2xl font-bold text-navy mb-8">How Remote Online Notarization Works</h2>
+                <div class="space-y-6 mb-12">
+                  <div class="step-card flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
+                      <span class="text-navy font-bold text-lg">1</span>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy mb-1">Book Your Appointment</h4>
+                      <p class="text-gray-600 text-sm">Schedule a convenient time through our online booking system.</p>
+                    </div>
+                  </div>
+                  <div class="step-card flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
+                      <span class="text-navy font-bold text-lg">2</span>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy mb-1">Upload Your Documents</h4>
+                      <p class="text-gray-600 text-sm">Send your documents in PDF format prior to the session.</p>
+                    </div>
+                  </div>
+                  <div class="step-card flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
+                      <span class="text-navy font-bold text-lg">3</span>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy mb-1">Identity Verification</h4>
+                      <p class="text-gray-600 text-sm">Complete secure identity verification with your government-issued ID.</p>
+                    </div>
+                  </div>
+                  <div class="step-card flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
+                      <span class="text-navy font-bold text-lg">4</span>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy mb-1">Secure Live Session</h4>
+                      <p class="text-gray-600 text-sm">Connect via secure video for the notarization process.</p>
+                    </div>
+                  </div>
+                  <div class="step-card flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
+                      <span class="text-navy font-bold text-lg">5</span>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy mb-1">Receive Notarized Documents</h4>
+                      <p class="text-gray-600 text-sm">Get your legally notarized documents delivered electronically.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-</section>
+              <!-- Sidebar -->
+              <div class="lg:col-span-1">
+                <!-- Requirements Card -->
+                <div class="bg-gray-50 rounded-2xl p-8 mb-8 sticky top-24">
+                  <h3 class="font-display text-xl font-bold text-navy mb-6">Requirements</h3>
+                  <ul class="space-y-4">
+                    <li class="flex items-start space-x-3">
+                      <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-700 text-sm">Valid government-issued ID</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-700 text-sm">Device with camera and microphone</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-700 text-sm">Stable internet connection</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-700 text-sm">Documents in PDF format</span>
+                    </li>
+                  </ul>
+                  
+                  <div class="mt-8">
+                    <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88131003" target="_blank" rel="noopener noreferrer" class="gold-btn text-navy font-semibold px-6 py-4 rounded-lg flex items-center justify-center space-x-2 w-full">
+                      <span>Book RON Session</span>
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                      </svg>
+                    </a>
+                  </div>
+                  
+                  <div class="mt-6 pt-6 border-t border-gray-200">
+                    <p class="text-gray-500 text-sm mb-2">Need help?</p>
+                    <a href="tel:9543764114" class="text-navy font-bold text-lg hover:text-gold transition-colors">(954) 376-4114</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ,
 
-<section id="about">
-<h2>About Us</h2>
-<p>Tevin's Notary Agency provides reliable mobile and remote online notarization services.</p>
-</section>
+      'mobile-notary': () => 
+        <!-- Mobile Notary Hero -->
+        <section class="bg-navy relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10">
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-gold rounded-full filter blur-3xl -translate-x-1/2 translate-y-1/2"></div>
+          </div>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative">
+            <div class="max-w-3xl fade-in">
+              <a href="#" onclick="navigateTo('home')" class="inline-flex items-center text-gold hover:text-gold-light mb-6 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+              </a>
+              <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Mobile Notary Services in Broward, Palm Beach & St. Lucie Counties</h1>
+              <p class="text-white/70 text-lg">We come to you! Professional mobile notary services at your home, office, hospital, or any convenient location throughout South Florida.</p>
+            </div>
+          </div>
+        </section>
 
+        <!-- Mobile Notary Content -->
+        <section class="py-16 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+              <!-- Main Content -->
+              <div class="lg:col-span-2">
+                <!-- Pricing -->
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 mb-12 text-white">
+                  <h2 class="font-display text-2xl font-bold mb-4">Mobile Notary Pricing</h2>
+                  <div class="flex flex-wrap gap-4">
+                    <div class="bg-white/10 rounded-xl p-6 flex-1 min-w-[150px]">
+                      <p class="text-white/70 text-sm mb-2">Starting At</p>
+                      <p class="text-3xl font-bold text-gold">$100</p>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-6 flex-1 min-w-[150px]">
+                      <p class="text-white/70 text-sm mb-2">Travel Fees</p>
+                      <p class="text-xl font-bold text-white">May Apply</p>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-6 flex-1 min-w-[150px]">
+                      <p class="text-white/70 text-sm mb-2">After Hours</p>
+                      <p class="text-xl font-bold text-white">Add'l Fees</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Services -->
+                <h2 class="font-display text-2xl font-bold text-navy mb-8">Documents We Notarize</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+                  <div class="bg-gray-50 rounded-xl p-6 flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                      </svg>
+                    </div>
+                    <span class="font-medium text-navy">Lease Agreements</span>
+                  </div>
+                  <div class="bg-gray-50 rounded-xl p-6 flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                      </svg>
+                    </div>
+                    <span class="font-medium text-navy">Power of Attorney</span>
+                  </div>
+                  <div class="bg-gray-50 rounded-xl p-6 flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                      </svg>
+                    </div>
+                    <span class="font-medium text-navy">Estate Planning Documents</span>
+                  </div>
+                  <div class="bg-gray-50 rounded-xl p-6 flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                      </svg>
+                    </div>
+                    <span class="font-medium text-navy">Hospital & Nursing Home</span>
+                  </div>
+                  <div class="bg-gray-50 rounded-xl p-6 flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                      </svg>
+                    </div>
+                    <span class="font-medium text-navy">Jail Signings</span>
+                  </div>
+                  <div class="bg-gray-50 rounded-xl p-6 flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                      </svg>
+                    </div>
+                    <span class="font-medium text-navy">Affidavits</span>
+                  </div>
+                  <div class="bg-gray-50 rounded-xl p-6 flex items-center space-x-4 sm:col-span-2">
+                    <div class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                      </svg>
+                    </div>
+                    <span class="font-medium text-navy">Contracts & General Documents</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sidebar -->
+              <div class="lg:col-span-1">
+                <div class="bg-gray-50 rounded-2xl p-8 sticky top-24">
+                  <h3 class="font-display text-xl font-bold text-navy mb-6">Client Requirements</h3>
+                  <ul class="space-y-4 mb-8">
+                    <li class="flex items-start space-x-3">
+                      <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-700 text-sm">Valid ID required</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-700 text-sm">Documents must be unsigned</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-700 text-sm">All signers must be present</span>
+                    </li>
+                  </ul>
+                  
+                  <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88133763" target="_blank" rel="noopener noreferrer" class="gold-btn text-navy font-semibold px-6 py-4 rounded-lg flex items-center justify-center space-x-2 w-full">
+                    <span>Schedule Mobile Notary</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                  </a>
+                  
+                  <div class="mt-6 pt-6 border-t border-gray-200">
+                    <p class="text-gray-500 text-sm mb-2">Call to schedule:</p>
+                    <a href="tel:9543764114" class="text-navy font-bold text-lg hover:text-gold transition-colors">(954) 376-4114</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ,
+
+      'loan-signing': () => 
+        <!-- Loan Signing Hero -->
+        <section class="bg-navy relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-1/2 left-1/2 w-96 h-96 bg-gold rounded-full filter blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+          </div>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative">
+            <div class="max-w-3xl fade-in">
+              <a href="#" onclick="navigateTo('home')" class="inline-flex items-center text-gold hover:text-gold-light mb-6 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+              </a>
+              <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Certified Loan Signing Agent Services</h1>
+              <p class="text-white/70 text-lg">Professional loan document signings for title companies, lenders, and individual clients. Experienced with all types of real estate transactions.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Loan Signing Content -->
+        <section class="py-16 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Services Grid -->
+            <div class="mb-16">
+              <h2 class="font-display text-2xl font-bold text-navy mb-8 text-center">Loan Packages We Handle</h2>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white text-center">
+                  <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-display text-xl font-semibold mb-2">Buyer Packages</h3>
+                  <p class="text-white/70 text-sm">Complete purchase loan documentation</p>
+                </div>
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white text-center">
+                  <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-display text-xl font-semibold mb-2">Seller Packages</h3>
+                  <p class="text-white/70 text-sm">Sale closing documentation</p>
+                </div>
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white text-center">
+                  <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-display text-xl font-semibold mb-2">Refinance Packages</h3>
+                  <p class="text-white/70 text-sm">Refinancing loan documents</p>
+                </div>
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white text-center">
+                  <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-display text-xl font-semibold mb-2">HELOC Packages</h3>
+                  <p class="text-white/70 text-sm">Home equity line of credit</p>
+                </div>
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white text-center">
+                  <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-display text-xl font-semibold mb-2">Title & Escrow</h3>
+                  <p class="text-white/70 text-sm">Title company documents</p>
+                </div>
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white text-center">
+                  <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-display text-xl font-semibold mb-2">Real Estate Closings</h3>
+                  <p class="text-white/70 text-sm">Full closing services</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="bg-gray-50 rounded-3xl p-10">
+              <h2 class="font-display text-2xl font-bold text-navy mb-8 text-center">Why Title Companies & Lenders Choose Us</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                  <div class="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                    </svg>
+                  </div>
+                  <h4 class="font-semibold text-navy mb-2">Experienced</h4>
+                  <p class="text-gray-600 text-sm">Large loan document packages handled with expertise</p>
+                </div>
+                <div class="text-center">
+                  <div class="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                    </svg>
+                  </div>
+                  <h4 class="font-semibold text-navy mb-2">Detail-Oriented</h4>
+                  <p class="text-gray-600 text-sm">Accurate signings with thorough document review</p>
+                </div>
+                <div class="text-center">
+                  <div class="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                  </div>
+                  <h4 class="font-semibold text-navy mb-2">Punctual</h4>
+                  <p class="text-gray-600 text-sm">Professional and always on time</p>
+                </div>
+                <div class="text-center">
+                  <div class="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                  </div>
+                  <h4 class="font-semibold text-navy mb-2">Reliable</h4>
+                  <p class="text-gray-600 text-sm">Dependable signing representation</p>
+                </div>
+              </div>
+              
+              <div class="mt-10 text-center">
+                <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88133763" target="_blank" rel="noopener noreferrer" class="gold-btn text-navy font-semibold px-8 py-4 rounded-lg inline-flex items-center space-x-2">
+                  <span>Schedule Loan Signing</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </a>
+                <p class="mt-4 text-gray-500 text-sm">Or call <a href="tel:9543764114" class="text-gold font-semibold hover:underline">(954) 376-4114</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      ,
+
+      'service-areas': () => 
+        <!-- Service Areas Hero -->
+        <section class="bg-navy relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-gold rounded-full filter blur-3xl"></div>
+          </div>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative">
+            <div class="max-w-3xl fade-in">
+              <a href="#" onclick="navigateTo('home')" class="inline-flex items-center text-gold hover:text-gold-light mb-6 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+              </a>
+              <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Service Areas</h1>
+              <p class="text-white/70 text-lg">Mobile notary services throughout South Florida and remote online notarization available across the United States.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Service Areas Content -->
+        <section class="py-16 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Mobile Notary Areas -->
+            <div class="mb-16">
+              <h2 class="font-display text-2xl font-bold text-navy mb-8 text-center">Mobile Notary Service Areas</h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white">
+                  <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-display text-xl font-semibold mb-4">Broward County</h3>
+                  <p class="text-white/70 text-sm leading-relaxed">Serving Fort Lauderdale, Hollywood, Pembroke Pines, Miramar, Coral Springs, Pompano Beach, Davie, Plantation, Sunrise, and all surrounding areas.</p>
+                </div>
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white">
+                  <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-display text-xl font-semibold mb-4">Palm Beach County</h3>
+                  <p class="text-white/70 text-sm leading-relaxed">Serving West Palm Beach, Boca Raton, Boynton Beach, Delray Beach, Palm Beach Gardens, Jupiter, Wellington, and all surrounding areas.</p>
+                </div>
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white">
+                  <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-display text-xl font-semibold mb-4">St. Lucie County</h3>
+                  <p class="text-white/70 text-sm leading-relaxed">Serving Port St. Lucie, Fort Pierce, and all surrounding communities on the Treasure Coast.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- RON Nationwide -->
+            <div class="bg-gray-50 rounded-3xl p-10">
+              <div class="text-center max-w-3xl mx-auto">
+                <div class="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg class="w-10 h-10 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <h2 class="font-display text-2xl font-bold text-navy mb-4">Remote Online Notary Available Across the United States</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">As a Florida commissioned online notary, we can legally notarize documents for clients located anywhere in the United States where remote online notarization is permitted. Our secure platform ensures your documents are notarized with the same legal validity as traditional in-person notarization.</p>
+                <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88131003" target="_blank" rel="noopener noreferrer" class="gold-btn text-navy font-semibold px-8 py-4 rounded-lg inline-flex items-center space-x-2">
+                  <span>Book RON Session</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      ,
+
+      pricing: () => 
+        <!-- Pricing Hero -->
+        <section class="bg-navy relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10">
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-gold rounded-full filter blur-3xl"></div>
+          </div>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative">
+            <div class="max-w-3xl fade-in">
+              <a href="#" onclick="navigateTo('home')" class="inline-flex items-center text-gold hover:text-gold-light mb-6 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+              </a>
+              <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Transparent Pricing</h1>
+              <p class="text-white/70 text-lg">Clear, upfront pricing for all our notary services. No hidden fees.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pricing Content -->
+        <section class="py-16 bg-white">
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- RON Pricing -->
+              <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white">
+                <div class="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center mb-6">
+                  <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <h3 class="font-display text-2xl font-bold mb-6">Remote Online Notary</h3>
+                <ul class="space-y-4 mb-8">
+                  <li class="flex justify-between items-center pb-4 border-b border-white/20">
+                    <span class="text-white/80">Standard Rate</span>
+                    <span class="text-gold font-bold text-xl">$45+</span>
+                  </li>
+                  <li class="flex justify-between items-center pb-4 border-b border-white/20">
+                    <span class="text-white/80">Witness Fee</span>
+                    <span class="text-gold font-bold text-xl">$15</span>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <span class="text-white/80">Additional Documents</span>
+                    <span class="text-gold font-bold">Contact Us</span>
+                  </li>
+                </ul>
+                <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88131003" target="_blank" rel="noopener noreferrer" class="gold-btn text-navy font-semibold px-6 py-4 rounded-lg flex items-center justify-center space-x-2 w-full">
+                  <span>Book RON</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Mobile Notary Pricing -->
+              <div class="bg-gray-50 rounded-2xl p-8">
+                <div class="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center mb-6">
+                  <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                  </svg>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-navy mb-6">Mobile Notary</h3>
+                <ul class="space-y-4 mb-8">
+                  <li class="flex justify-between items-center pb-4 border-b border-gray-200">
+                    <span class="text-gray-600">Starting Rate</span>
+                    <span class="text-navy font-bold text-xl">$100+</span>
+                  </li>
+                  <li class="flex justify-between items-center pb-4 border-b border-gray-200">
+                    <span class="text-gray-600">Travel Fees</span>
+                    <span class="text-navy font-bold">May Apply</span>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <span class="text-gray-600">After Hours</span>
+                    <span class="text-navy font-bold">Add'l Fees</span>
+                  </li>
+                </ul>
+                <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88133763" target="_blank" rel="noopener noreferrer" class="bg-navy hover:bg-navy-light text-white font-semibold px-6 py-4 rounded-lg flex items-center justify-center space-x-2 w-full transition-colors">
+                  <span>Book Mobile</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Loan Signing -->
+            <div class="mt-8 bg-gradient-to-r from-gold/10 to-gold/5 rounded-2xl p-8 border border-gold/20">
+              <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0">
+                  <h3 class="font-display text-xl font-bold text-navy mb-2">Loan Signing Agent Services</h3>
+                  <p class="text-gray-600">For title companies and lenders - contact us for competitive rates.</p>
+                </div>
+                <a href="tel:9543764114" class="gold-btn text-navy font-semibold px-6 py-3 rounded-lg inline-flex items-center space-x-2">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  </svg>
+                  <span>Call for Quote</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      ,
+
+      about: () => 
+        <!-- About Hero -->
+        <section class="bg-navy relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-1/2 right-0 w-96 h-96 bg-gold rounded-full filter blur-3xl translate-x-1/2"></div>
+          </div>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative">
+            <div class="max-w-3xl fade-in">
+              <a href="#" onclick="navigateTo('home')" class="inline-flex items-center text-gold hover:text-gold-light mb-6 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+              </a>
+              <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">About Tevin's Notary Agency</h1>
+              <p class="text-white/70 text-lg">Professional notary services built on trust, reliability, and exceptional customer service.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="py-16 bg-white">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-lg max-w-none">
+              <div class="bg-gray-50 rounded-2xl p-8 mb-12">
+                <h2 class="font-display text-2xl font-bold text-navy mb-6">Our Mission</h2>
+                <p class="text-gray-600 leading-relaxed">At Tevin's Notary Agency, we are committed to providing professional, reliable, and convenient notary services to individuals and businesses throughout South Florida and nationwide through our remote online notarization platform. Our goal is to make the notarization process as simple and stress-free as possible.</p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white">
+                  <div class="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-display text-xl font-semibold mb-3">Licensed & Insured</h3>
+                  <p class="text-white/70 text-sm">Florida State Commissioned Notary Public with full errors and omissions insurance coverage for your protection.</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8">
+                  <div class="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                  </div>
+                  <h3 class="font-display text-xl font-semibold text-navy mb-3">Secure & Confidential</h3>
+                  <p class="text-gray-600 text-sm">Your documents and personal information are handled with the utmost care and confidentiality.</p>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <h2 class="font-display text-2xl font-bold text-navy mb-6">Ready to Get Started?</h2>
+                <p class="text-gray-600 mb-8">Contact us today to schedule your notary appointment.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88131003" target="_blank" rel="noopener noreferrer" class="gold-btn text-navy font-semibold px-8 py-4 rounded-lg inline-flex items-center space-x-2">
+                    <span>Book Appointment</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                  </a>
+                  <a href="tel:9543764114" class="bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 rounded-lg inline-flex items-center space-x-2 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span>(954) 376-4114</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ,
+
+      contact: () => 
+        <!-- Contact Hero -->
+        <section class="bg-navy relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-gold rounded-full filter blur-3xl -translate-x-1/2"></div>
+          </div>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative">
+            <div class="max-w-3xl fade-in">
+              <a href="#" onclick="navigateTo('home')" class="inline-flex items-center text-gold hover:text-gold-light mb-6 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+              </a>
+              <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Contact Us</h1>
+              <p class="text-white/70 text-lg">Get in touch with us to schedule your notary appointment or ask any questions.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="py-16 bg-white">
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <!-- Contact Info -->
+              <div>
+                <h2 class="font-display text-2xl font-bold text-navy mb-8">Get In Touch</h2>
+                
+                <div class="space-y-6">
+                  <a href="tel:9543764114" class="flex items-center space-x-4 p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+                    <div class="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-gray-500 text-sm">Phone</p>
+                      <p class="text-navy font-bold text-xl">(954) 376-4114</p>
+                    </div>
+                  </a>
+                  
+                  <a href="mailto:tevinsnotaryagency@gmail.com" class="flex items-center space-x-4 p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+                    <div class="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-gray-500 text-sm">Email</p>
+                      <p class="text-navy font-bold text-lg">tevinsnotaryagency@gmail.com</p>
+                    </div>
+                  </a>
+                  
+                  <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-gray-500 text-sm">Service Areas</p>
+                      <p class="text-navy font-semibold">Broward, Palm Beach & St. Lucie Counties</p>
+                      <p class="text-gray-600 text-sm mt-1">RON available nationwide</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Form -->
+              <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white">
+                <h2 class="font-display text-2xl font-bold mb-2">Send Us a Message</h2>
+                <p class="text-white/70 mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
+                
+                <form id="contact-form" class="space-y-5" onsubmit="handleFormSubmit(event)">
+                  <!-- Full Name -->
+                  <div>
+                    <label for="full-name" class="block text-sm font-semibold text-white mb-2">Full Name <span class="text-gold">*</span></label>
+                    <input type="text" id="full-name" name="full_name" required class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-gold focus:bg-white/15 transition-colors" placeholder="Your full name">
+                  </div>
+
+                  <!-- Email Address -->
+                  <div>
+                    <label for="email" class="block text-sm font-semibold text-white mb-2">Email Address <span class="text-gold">*</span></label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-gold focus:bg-white/15 transition-colors" placeholder="your@email.com">
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div>
+                    <label for="phone" class="block text-sm font-semibold text-white mb-2">Phone Number <span class="text-gold">*</span></label>
+                    <input type="tel" id="phone" name="phone_number" required class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-gold focus:bg-white/15 transition-colors" placeholder="(954) 123-4567">
+                  </div>
+
+                  <!-- Service Needed -->
+                  <div>
+                    <label for="service" class="block text-sm font-semibold text-white mb-2">Service Needed <span class="text-gold">*</span></label>
+                    <select id="service" name="service_needed" required class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-gold focus:bg-white/15 transition-colors appearance-none cursor-pointer" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23c9a227%22 stroke-width=%222%22><polyline points=%226 9 12 15 18 9%22></polyline></svg>'); background-repeat: no-repeat; background-position: right 0.75rem center; background-size: 1.5em 1.5em; padding-right: 2.5rem;">
+                      <option value="" class="bg-navy text-white">Select a service...</option>
+                      <option value="Remote Online Notary" class="bg-navy text-white">Remote Online Notary</option>
+                      <option value="Mobile Notary" class="bg-navy text-white">Mobile Notary</option>
+                      <option value="Loan Signing" class="bg-navy text-white">Loan Signing</option>
+                      <option value="Real Estate / Title Closing" class="bg-navy text-white">Real Estate / Title Closing</option>
+                      <option value="Other" class="bg-navy text-white">Other</option>
+                    </select>
+                  </div>
+
+                  <!-- Message -->
+                  <div>
+                    <label for="message" class="block text-sm font-semibold text-white mb-2">Message <span class="text-gold">*</span></label>
+                    <textarea id="message" name="message" required rows="4" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-gold focus:bg-white/15 transition-colors resize-none" placeholder="Tell us more about your needs..."></textarea>
+                  </div>
+
+                  <!-- Consent Checkboxes -->
+                  <div class="space-y-4 pt-2">
+                    <label class="flex items-start space-x-3 cursor-pointer">
+                      <input type="checkbox" id="consent-calls" name="consent_calls" required class="w-5 h-5 mt-0.5 rounded bg-white/10 border border-white/20 text-gold focus:ring-2 focus:ring-gold accent-gold">
+                      <span class="text-sm text-white/90 leading-relaxed">I agree to receive calls, emails, and text messages from Tevin's Notary Agency regarding notary services.</span>
+                    </label>
+
+                    <label class="flex items-start space-x-3 cursor-pointer">
+                      <input type="checkbox" id="consent-sms" name="consent_sms" required class="w-5 h-5 mt-0.5 rounded bg-white/10 border border-white/20 text-gold focus:ring-2 focus:ring-gold accent-gold">
+                      <span class="text-sm text-white/90 leading-relaxed">By checking this box, you consent to receive text messages. Message and data rates may apply. Message frequency may vary. Reply STOP to opt out. Reply HELP for assistance.</span>
+                    </label>
+                  </div>
+
+                  <!-- Privacy Policy Link -->
+                  <p class="text-xs text-white/60">View our <a href="#" onclick="navigateTo('terms')" class="text-gold hover:text-gold-light underline transition-colors">Privacy Policy</a> for more information.</p>
+
+                  <!-- Error Message -->
+                  <div id="form-error" class="hidden bg-red-500/20 border border-red-500/50 text-red-200 px-4 py-3 rounded-lg text-sm"></div>
+
+                  <!-- Success Message -->
+                  <div id="form-success" class="hidden bg-green-500/20 border border-green-500/50 text-green-200 px-4 py-3 rounded-lg text-sm"></div>
+
+                  <!-- Submit Button -->
+                  <button type="submit" id="submit-btn" class="gold-btn text-navy font-semibold px-6 py-4 rounded-lg w-full flex items-center justify-center space-x-2 transition-all hover:shadow-lg">
+                    <span>Send Message</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      ,
+
+      terms: () => 
+        <!-- Terms Hero -->
+        <section class="bg-navy relative overflow-hidden">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative">
+            <div class="max-w-3xl fade-in">
+              <a href="#" onclick="navigateTo('home')" class="inline-flex items-center text-gold hover:text-gold-light mb-6 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+              </a>
+              <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Terms & Conditions</h1>
+              <p class="text-white/70 text-lg">Please read these terms carefully before using our services.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Terms Content -->
+        <section class="py-16 bg-white">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-lg max-w-none">
+              <div class="space-y-8">
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h2 class="font-display text-xl font-bold text-navy mb-4">1. Services Provided</h2>
+                  <p class="text-gray-600 text-sm leading-relaxed">Tevin's Notary Agency provides mobile notary services, remote online notarization (RON), and loan signing agent services. Our services are performed in accordance with Florida state laws and regulations governing notary public activities.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h2 class="font-display text-xl font-bold text-navy mb-4">2. Identification Requirements</h2>
+                  <p class="text-gray-600 text-sm leading-relaxed">All signers must present valid, unexpired government-issued photo identification. Acceptable forms of ID include a driver's license, state ID card, passport, or military ID. We reserve the right to refuse service if proper identification cannot be verified.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h2 class="font-display text-xl font-bold text-navy mb-4">3. Payment Terms</h2>
+                  <p class="text-gray-600 text-sm leading-relaxed">Payment is due at the time of service unless other arrangements have been made in advance. We accept cash, credit cards, and electronic payment methods. Travel fees and after-hours surcharges may apply based on location and scheduling requirements.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h2 class="font-display text-xl font-bold text-navy mb-4">4. Cancellation Policy</h2>
+                  <p class="text-gray-600 text-sm leading-relaxed">We request at least 24 hours notice for cancellations or rescheduling. Last-minute cancellations or no-shows may be subject to a cancellation fee. We understand emergencies happen and will work with clients on a case-by-case basis.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h2 class="font-display text-xl font-bold text-navy mb-4">5. Liability Limitations</h2>
+                  <p class="text-gray-600 text-sm leading-relaxed">As a notary public, we are prohibited from providing legal advice or preparing legal documents. We cannot verify the legality, accuracy, or completeness of documents presented for notarization. Clients are responsible for ensuring their documents meet all legal requirements.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h2 class="font-display text-xl font-bold text-navy mb-4">6. Remote Online Notarization</h2>
+                  <p class="text-gray-600 text-sm leading-relaxed">RON services are conducted in compliance with Florida Statutes Chapter 117 and all applicable regulations. Signers must have access to a device with a camera, microphone, and stable internet connection. Documents must be provided in PDF format prior to the session.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h2 class="font-display text-xl font-bold text-navy mb-4">7. Confidentiality</h2>
+                  <p class="text-gray-600 text-sm leading-relaxed">We maintain strict confidentiality regarding all documents and personal information encountered during notarization. We will not disclose any information except as required by law or with the written consent of the parties involved.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h2 class="font-display text-xl font-bold text-navy mb-4">8. Contact Information</h2>
+                  <p class="text-gray-600 text-sm leading-relaxed mb-4">If you have questions about these terms or our services, please contact us:</p>
+                  <p class="text-navy font-semibold">Phone: (954) 376-4114</p>
+                  <p class="text-navy font-semibold">Email: tevinsnotaryagency@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="mt-12 text-center">
+                <p class="text-gray-500 text-sm">Last updated: January 2024</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+    };
+
+    // Navigation function
+    function navigateTo(page) {
+      currentPage = page;
+      renderPage();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Render current page
+    function renderPage() {
+      const content = document.getElementById('page-content');
+      if (pages[currentPage]) {
+        content.innerHTML = pages[currentPage]();
+      }
+    }
+
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const closeIcon = document.getElementById('close-icon');
+      
+      menu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    }
+
+    // Handle contact form submission
+    async function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById('contact-form');
+      const submitBtn = document.getElementById('submit-btn');
+      const errorDiv = document.getElementById('form-error');
+      const successDiv = document.getElementById('form-success');
+      
+      // Reset messages
+      errorDiv.classList.add('hidden');
+      successDiv.classList.add('hidden');
+      
+      // Get form data
+      const formData = {
+        full_name: document.getElementById('full-name').value,
+        email: document.getElementById('email').value,
+        phone_number: document.getElementById('phone').value,
+        service_needed: document.getElementById('service').value,
+        message: document.getElementById('message').value,
+        consent_calls: document.getElementById('consent-calls').checked,
+        consent_sms: document.getElementById('consent-sms').checked
+      };
+      
+      // Validate required checkboxes
+      if (!formData.consent_calls || !formData.consent_sms) {
+        errorDiv.textContent = 'Please check both consent boxes before submitting.';
+        errorDiv.classList.remove('hidden');
+        return;
+      }
+      
+      // Disable button and show loading state
+      submitBtn.disabled = true;
+      const originalText = submitBtn.querySelector('span').textContent;
+      submitBtn.querySelector('span').textContent = 'Sending...';
+      
+      try {
+        // Send email using EmailJS or similar service
+        // For now, we'll use a fetch request to a backend endpoint
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            access_key: 'YOUR_WEB3FORMS_KEY', // This would need to be replaced with actual key
+            from_name: 'Tevin\'s Notary Agency Contact Form',
+            to_email: 'tevinsnotaryagency@gmail.com',
+            subject: New Contact Form Submission - ${formData.service_needed},
+            full_name: formData.full_name,
+            email: formData.email,
+            phone_number: formData.phone_number,
+            service_needed: formData.service_needed,
+            message: formData.message,
+            consent_calls: formData.consent_calls ? 'Yes' : 'No',
+            consent_sms: formData.consent_sms ? 'Yes' : 'No',
+            redirect: 'https://web3forms.com/success',
+            reply_to: formData.email
+          })
+        });
+        
+        if (response.ok) {
+          // Success
+          successDiv.textContent = 'Thank you! Your message has been sent successfully. We\'ll be in touch within 24 hours.';
+          successDiv.classList.remove('hidden');
+          form.reset();
+          
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            successDiv.classList.add('hidden');
+          }, 5000);
+        } else {
+          throw new Error('Failed to send message');
+        }
+      } catch (error) {
+        console.error('Form submission error:', error);
+        errorDiv.textContent = 'There was an error sending your message. Please try again or call us at (954) 376-4114.';
+        errorDiv.classList.remove('hidden');
+      } finally {
+        // Re-enable button
+        submitBtn.disabled = false;
+        submitBtn.querySelector('span').textContent = originalText;
+      }
+    }
+
+    // Element SDK Integration
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig: defaultConfig,
+        onConfigChange: async (config) => {
+          // Update business name
+          const navBusinessName = document.getElementById('nav-business-name');
+          const footerBusinessName = document.getElementById('footer-business-name');
+          if (navBusinessName) navBusinessName.textContent = config.business_name || defaultConfig.business_name;
+          if (footerBusinessName) footerBusinessName.textContent = config.business_name || defaultConfig.business_name;
+          
+          // Update phone numbers
+          const phoneNumber = config.phone_number || defaultConfig.phone_number;
+          const phoneLink = 'tel:' + phoneNumber.replace(/[^0-9]/g, '');
+          
+          const navPhone = document.getElementById('nav-phone');
+          const footerPhone = document.getElementById('footer-phone');
+          if (navPhone) {
+            navPhone.href = phoneLink;
+            navPhone.querySelector('span').textContent = phoneNumber;
+          }
+          if (footerPhone) {
+            footerPhone.href = phoneLink;
+            footerPhone.querySelector('span').textContent = phoneNumber;
+          }
+          
+          // Update hero headline if on home page
+          const heroHeadline = document.getElementById('hero-headline');
+          if (heroHeadline) {
+            heroHeadline.textContent = config.hero_headline || defaultConfig.hero_headline;
+          }
+          
+          const heroPhone = document.getElementById('hero-phone');
+          if (heroPhone) {
+            heroPhone.href = phoneLink;
+            heroPhone.textContent = phoneNumber;
+          }
+        },
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.primary_color || defaultConfig.primary_color,
+              set: (value) => { config.primary_color = value; window.elementSdk.setConfig({ primary_color: value }); }
+            },
+            {
+              get: () => config.secondary_color || defaultConfig.secondary_color,
+              set: (value) => { config.secondary_color = value; window.elementSdk.setConfig({ secondary_color: value }); }
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => { config.text_color = value; window.elementSdk.setConfig({ text_color: value }); }
+            },
+            {
+              get: () => config.background_color || defaultConfig.background_color,
+              set: (value) => { config.background_color = value; window.elementSdk.setConfig({ background_color: value }); }
+            },
+            {
+              get: () => config.accent_color || defaultConfig.accent_color,
+              set: (value) => { config.accent_color = value; window.elementSdk.setConfig({ accent_color: value }); }
+            }
+          ],
+          borderables: [],
+          fontEditable: undefined,
+          fontSizeable: undefined
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ['business_name', config.business_name || defaultConfig.business_name],
+          ['phone_number', config.phone_number || defaultConfig.phone_number],
+          ['hero_headline', config.hero_headline || defaultConfig.hero_headline]
+        ])
+      });
+    }
+
+    // Initialize page
+    renderPage();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9da2f8e3a67add7d',t:'MTc3MzE1MjU1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource.html"></iframe>
+</body></html>
 <section id="contact">
 <h2>Contact</h2>
 <p>Phone: (954) 376-4114</p>

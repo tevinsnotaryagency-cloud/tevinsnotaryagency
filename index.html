@@ -1,33 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>Tevin's Notary Agency</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tevin's Notary Agency</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+navy: '#0a1628',
+'navy-light': '#142240',
+gold: '#c9a227',
+'gold-light': '#d4b84a',
+'gold-dark': '#a8871f'
+},
+fontFamily: {
+display: ['Playfair Display', 'Georgia', 'serif'],
+body: ['Inter', 'system-ui', 'sans-serif']
+}
+}
+}
+}
+</script>
+
+<style>
+
+html,body{
+height:100%;
+margin:0;
+}
+
+.app-wrapper{
+min-height:100%;
+width:100%;
+}
+
+.nav-link{
+position:relative;
+}
+
+.nav-link::after{
+content:'';
+position:absolute;
+bottom:-2px;
+left:0;
+width:0;
+height:2px;
+background:#c9a227;
+transition:width .3s ease;
+}
+
+.nav-link:hover::after{
+width:100%;
+}
+
+.service-card{
+transition:transform .3s ease,box-shadow .3s ease;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.gold-btn{
+background:linear-gradient(135deg,#c9a227 0%,#d4b84a 100%);
+transition:.3s;
+}
+
+.gold-btn:hover{
+background:linear-gradient(135deg,#a8871f 0%,#c9a227 100%);
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(201,162,39,.4);
+}
+
+.fade-in{
+animation:fadeIn .6s ease forwards;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+
 </head>
-<body class="font-sans bg-white text-gray-900">
-    <nav class="bg-gray-800 p-4">
-        <ul class="flex space-x-4 text-white">
-            <li><a href="/" class="hover:underline">Home</a></li>
-            <li><a href="/ron" class="hover:underline">Remote Online Notary</a></li>
-            <li><a href="/mobile-notary" class="hover:underline">Mobile Notary</a></li>
-            <li><a href="/loan-signing" class="hover:underline">Loan Signing</a></li>
-            <li><a href="/service-areas" class="hover:underline">Service Areas</a></li>
-            <li><a href="/pricing" class="hover:underline">Pricing</a></li>
-            <li><a href="/about" class="hover:underline">About</a></li>
-            <li><a href="/contact" class="hover:underline">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main class="p-4">
-        <h1 class="text-3xl font-bold">Welcome to Tevin's Notary Agency</h1>
-        <p class="mt-4">All our services are easily accessible.</p>
-        <!-- Additional content goes here -->
-    </main>
-
-    <footer class="mt-8 p-4 bg-gray-800 text-white text-center">
-        <p>&copy; 2026 Tevin's Notary Agency. All rights reserved.</p>
-    </footer>
-</body>
-</html>

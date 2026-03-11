@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Areas | Tevin's Notary Agency</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a1628',
+            'navy-light': '#142240',
+            gold: '#c9a227',
+            'gold-light': '#d4b84a',
+            'gold-dark': '#a8871f'
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .app-wrapper { min-height: 100%; width: 100%; }
+    .nav-link { position: relative; }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #c9a227;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after { width: 100%; }
+    .service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    .gold-btn {
+      background: linear-gradient(135deg, #c9a227 0%, #d4b84a 100%);
+      transition: all 0.3s ease;
+    }
+    .gold-btn:hover {
+      background: linear-gradient(135deg, #a8871f 0%, #c9a227 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(201,162,39,0.4);
+    }
+    .fade-in { animation: fadeIn 0.6s ease forwards; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .step-card { transition: all 0.3s ease; }
+    .step-card:hover { background: #f8fafc; }
+  </style>
+</head>
+<body class="h-full font-body text-gray-800 bg-white">
+<div class="app-wrapper overflow-auto">
+  <nav class="fixed top-0 left-0 right-0 bg-navy/95 backdrop-blur-md z-50 border-b border-navy-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="../" class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-gradient-to-br from-gold to-gold-light rounded-lg flex items-center justify-center">
+            <svg class="w-7 h-7 text-navy" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z"></path>
+              <path d="M8 12h8v2H8zm0 4h8v2H8z"></path>
+            </svg>
+          </div>
+          <div class="hidden sm:block">
+            <span class="text-white font-display text-xl font-semibold">Tevin's Notary Agency</span>
+            <p class="text-gold text-xs tracking-wider">PROFESSIONAL NOTARY SERVICES</p>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center space-x-6">
+          <a href="../" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Home</a>
+          <a href="../ron/" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Remote Online Notary</a>
+          <a href="../mobile-notary/" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Mobile Notary</a>
+          <a href="../loan-signing/" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Loan Signing</a>
+          <a href="../service-areas/" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Service Areas</a>
+          <a href="../pricing/" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Pricing</a>
+          <a href="../about/" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">About</a>
+          <a href="../contact/" class="nav-link text-white/90 hover:text-gold text-sm font-medium transition-colors">Contact</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="tel:9543764114" class="hidden md:flex items-center space-x-2 text-gold hover:text-gold-light transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <span class="font-semibold">(954) 376-4114</span>
+          </a>
+          <button onclick="toggleMobileMenu()" class="lg:hidden text-white p-2">
+            <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden pb-6">
+        <div class="flex flex-col space-y-3 pt-4 border-t border-navy-light">
+          <a href="../" class="text-white/90 hover:text-gold py-2 transition-colors">Home</a>
+          <a href="../ron/" class="text-white/90 hover:text-gold py-2 transition-colors">Remote Online Notary</a>
+          <a href="../mobile-notary/" class="text-white/90 hover:text-gold py-2 transition-colors">Mobile Notary</a>
+          <a href="../loan-signing/" class="text-white/90 hover:text-gold py-2 transition-colors">Loan Signing</a>
+          <a href="../service-areas/" class="text-white/90 hover:text-gold py-2 transition-colors">Service Areas</a>
+          <a href="../pricing/" class="text-white/90 hover:text-gold py-2 transition-colors">Pricing</a>
+          <a href="../about/" class="text-white/90 hover:text-gold py-2 transition-colors">About</a>
+          <a href="../contact/" class="text-white/90 hover:text-gold py-2 transition-colors">Contact</a>
+          <a href="tel:9543764114" class="flex items-center space-x-2 text-gold py-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <span class="font-semibold">(954) 376-4114</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="pt-20">
+      <section class="bg-navy relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10"><div class="absolute top-0 left-1/4 w-96 h-96 bg-gold rounded-full filter blur-3xl"></div></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative">
+          <div class="max-w-3xl fade-in">
+            <a href="../" class="inline-flex items-center text-gold hover:text-gold-light mb-6 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                Back to Home
+              </a>
+            <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Service Areas</h1>
+            <p class="text-white/70 text-lg">Mobile notary services throughout South Florida and remote online notarization available across the United States.</p>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="mb-16">
+            <h2 class="font-display text-2xl font-bold text-navy mb-8 text-center">Mobile Notary Service Areas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white"><div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-6"><svg class="w-8 h-8 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg></div><h3 class="font-display text-xl font-semibold mb-4">Broward County</h3><p class="text-white/70 text-sm leading-relaxed">Serving Fort Lauderdale, Hollywood, Pembroke Pines, Miramar, Coral Springs, Pompano Beach, Davie, Plantation, Sunrise, and all surrounding areas.</p></div>
+              <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white"><div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-6"><svg class="w-8 h-8 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg></div><h3 class="font-display text-xl font-semibold mb-4">Palm Beach County</h3><p class="text-white/70 text-sm leading-relaxed">Serving West Palm Beach, Boca Raton, Boynton Beach, Delray Beach, Palm Beach Gardens, Jupiter, Wellington, and all surrounding areas.</p></div>
+              <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white"><div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-6"><svg class="w-8 h-8 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg></div><h3 class="font-display text-xl font-semibold mb-4">St. Lucie County</h3><p class="text-white/70 text-sm leading-relaxed">Serving Port St. Lucie, Fort Pierce, and all surrounding communities on the Treasure Coast.</p></div>
+            </div>
+          </div>
+          <div class="bg-gray-50 rounded-3xl p-10">
+            <div class="text-center max-w-3xl mx-auto">
+              <div class="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6"><svg class="w-10 h-10 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"></path></svg></div>
+              <h2 class="font-display text-2xl font-bold text-navy mb-4">Remote Online Notary Available Across the United States</h2>
+              <p class="text-gray-600 mb-8 leading-relaxed">As a Florida commissioned online notary, we can legally notarize documents for clients located anywhere in the United States where remote online notarization is permitted.</p>
+              <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88131003" target="_blank" rel="noopener noreferrer" class="gold-btn text-navy font-semibold px-8 py-4 rounded-lg inline-flex items-center space-x-2"><span>Book RON Session</span><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></a>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+  <footer class="bg-navy text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div>
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="w-10 h-10 bg-gradient-to-br from-gold to-gold-light rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-navy" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z"></path></svg>
+            </div>
+            <span class="font-display text-lg font-semibold">Tevin's Notary Agency</span>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4">Professional mobile notary and remote online notarization services. Florida commissioned, serving clients across the United States.</p>
+          <div class="flex items-center space-x-2 text-gold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            <span class="text-sm font-medium">Licensed &amp; Insured</span>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-display text-lg font-semibold mb-6 text-gold">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="../ron/" class="text-white/70 hover:text-gold transition-colors text-sm">Remote Online Notary</a></li>
+            <li><a href="../mobile-notary/" class="text-white/70 hover:text-gold transition-colors text-sm">Mobile Notary</a></li>
+            <li><a href="../loan-signing/" class="text-white/70 hover:text-gold transition-colors text-sm">Loan Signing Agent</a></li>
+            <li><a href="../service-areas/" class="text-white/70 hover:text-gold transition-colors text-sm">Service Areas</a></li>
+            <li><a href="../pricing/" class="text-white/70 hover:text-gold transition-colors text-sm">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-lg font-semibold mb-6 text-gold">Service Areas</h4>
+          <ul class="space-y-3">
+            <li class="text-white/70 text-sm flex items-center space-x-2"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg><span>Broward County, FL</span></li>
+            <li class="text-white/70 text-sm flex items-center space-x-2"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg><span>Palm Beach County, FL</span></li>
+            <li class="text-white/70 text-sm flex items-center space-x-2"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg><span>St. Lucie County, FL</span></li>
+            <li class="text-white/70 text-sm flex items-center space-x-2 mt-4"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"></path></svg><span>RON Nationwide</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-lg font-semibold mb-6 text-gold">Contact Us</h4>
+          <ul class="space-y-4">
+            <li><a href="tel:9543764114" class="flex items-center space-x-3 text-white/70 hover:text-gold transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg><span class="text-sm">(954) 376-4114</span></a></li>
+            <li><a href="mailto:tevinsnotaryagency@gmail.com" class="flex items-center space-x-3 text-white/70 hover:text-gold transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg><span class="text-sm">tevinsnotaryagency@gmail.com</span></a></li>
+          </ul>
+          <div class="mt-6">
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=38143060&appointmentType=88131003" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 gold-btn text-navy font-semibold px-6 py-3 rounded-lg text-sm">
+              <span>Book Appointment</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-navy-light mt-12 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p class="text-white/50 text-sm">© 2024 Tevin's Notary Agency. All rights reserved.</p>
+          <div class="flex items-center space-x-6">
+            <a href="../terms/" class="text-white/50 hover:text-gold text-sm transition-colors">Terms &amp; Conditions</a>
+            <a href="../contact/" class="text-white/50 hover:text-gold text-sm transition-colors">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    menu.classList.toggle('hidden');
+    menuIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  }
+</script>
+</body>
+</html>
